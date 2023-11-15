@@ -1,3 +1,0 @@
-- Show user profile below sidebar
-- Move the content within a bit to the right
-- Show title for each .php files
