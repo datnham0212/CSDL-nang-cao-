@@ -1,0 +1,271 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    text-align: right; /* Align text to the right */
+    margin-top: 20px;
+    position: relative;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px; /* Add a margin to separate the image and text */
+}
+
+.user-profile p {
+    color: #000;
+    margin: 0; /* Remove default margin to prevent extra spacing */
+}
+
+.profile-container {
+    display: inline-block;
+    position: relative;
+}
+
+.profile-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.show-options {
+    display: block;
+}
+
+.profile-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.profile-options a:hover {
+    background-color: #f0f0f0;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+body.sidebar-toggled .content {
+    margin-left: 250px; /* Adjust to the width of the expanded sidebar */
+}
+
+body:not(.sidebar-toggled) .content {
+    margin-left: 0; /* Set margin to 0 when sidebar is not toggled */
+}
+
+.header {
+    background: #fff;
+    padding: 5px 10px; /* Adjusted padding for a smaller header size */
+    text-align: center;
+    border-bottom: 4px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 24px; /* Adjusted font size */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Adjusted letter spacing */
+}
+
+
+.main-section {
+    padding: 20px;
+}
+
+.main-section h2 {
+    color: #0074d9;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+/* Add hover effect for table rows */
+tbody tr:hover {
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+
+.add-button-container {
+            position: relative;
+        }
+
+        #add-patient-button {
+            background-color: #0074d9; /* Blue color */
+            color: #fff; /* White text */
+            border: none;
+            border-radius: 50%;
+            width: 40px; /* Adjust the width and height according to your preference */
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            position: absolute;
+            top: 0px; /* Adjust the position */
+            right: 20px; /* Adjust the position */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #add-patient-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+
+
+
+.add-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.add-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px; /* Increased padding for a larger window */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.add-content {
+    text-align: center;
+}
+
+.add-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-content input,
+.add-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.add-content button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Set the background color of Next and Previous buttons to blue */
+#prevButton,
+#nextButton {
+    background-color: #0074d9; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Change the footer background color to purple */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+
+

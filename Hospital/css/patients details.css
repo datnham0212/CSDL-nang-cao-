@@ -1,0 +1,84 @@
+/* Add this CSS to your stylesheet or create a new CSS file */
+.patient-details {
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+}
+
+.patient-info {
+    display: flex;
+}
+
+.patient-mugshot img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.medical-history {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.medical-history {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Adjust the margin as needed */
+}
+
+/* Add this CSS for the buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.delete-button {
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update-button {
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.update-button:hover {
+    background-color: #eee; /* Lighter grey on hover */
+}
